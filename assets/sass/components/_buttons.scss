@@ -1,0 +1,54 @@
+@use '../abstracts'as *;
+
+.btn {
+    display: inline-block;
+    margin: 0;
+    min-width: 20rem;
+    padding: 1.6rem 2rem;
+    border-radius: none;
+    cursor: pointer;
+    vertical-align: middle;
+    outline: none;
+    border: none;
+    border-radius: 3.5px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    font-size: 1.8rem;
+    --font-weight: 700;
+
+    &:active {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+@each $color,
+$shade in $colors {
+    @if $color==t-white {
+        .btn--#{$color} {
+            background-color: $shade;
+            color: var(--clr-primary);
+            transition: 0.3s ease-in-out all;
+
+            &:hover {
+                background-color: darken($shade, 15%);
+                transition: 0.3s ease-in-out all;
+            }
+        }
+    }
+
+    @else {
+        .btn--#{$color} {
+            background-color: $shade;
+            color: var(--clr-white);
+            transition: background-color 0.5s ease-in-out;
+
+
+            &:hover {
+                background-color: darken($shade, 10%);
+                transition: background-color 0.5s ease-in-out;
+            }
+        }
+    }
+}

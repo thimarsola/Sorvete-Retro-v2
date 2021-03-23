@@ -1,0 +1,28 @@
+{
+    "flavors": [
+        {
+            "flavor": "morango",
+            "image": "sorvete-retro-morango"
+        },
+        {
+            "flavor": "abacaxi",
+            "image": "sorvete-retro-abacaxi"
+        },
+        {
+            "flavor": "uva",
+            "image": "sorvete-retro-uva"
+        },
+        {
+            "flavor": "limão",
+            "image": "sorvete-retro-limao"
+        },
+        {
+            "flavor": "maracujá",
+            "image": "sorvete-retro-maracuja"
+        },
+        {
+            "flavor": "tutti-fruti",
+            "image": "sorvete-retro-tutti-fruti"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "events": [
+        {
+            "event": "Infantil",
+            "image": "evento-infantil-sorvete-retro",
+            "description": "Uma festa com sorvete a diversão é garantida!"
+        },
+        {
+            "event": "Casamento",
+            "image": "evento-casamento-sorvete-retro",
+            "description": "Só um sorvete poderia deixar um dia perfeito ainda mais gostoso!"
+        },
+        {
+            "event": "Debutante",
+            "image": "evento-debutante-sorvete-retro",
+            "description": "Sua festa com sorvete pode ser muito mais intensa e com milhares de sensações!"
+        },
+        {
+            "event": "Infantil",
+            "image": "evento-infantil-sorvete-retro",
+            "description": "Uma festa com sorvete a diversão é garantida!"
+        },
+        {
+            "event": "Aniversário",
+            "image": "evento-aniversario-sorvete-retro",
+            "description": "Festa com sorvete é mais um motivo para comemorar."
+        },
+        {
+            "event": "Corporativo",
+            "image": "evento-corporativo-sorvete-retro",
+            "description": "A reunião de trabalho mais feliz de todos os tempos."
+        }
+    ]
+}

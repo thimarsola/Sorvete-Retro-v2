@@ -1,0 +1,37 @@
+* {
+    font-family: 'Dosis', sans-serif;
+    font-variation-settings: 'wght'var(--font-weight, 400);
+}
+
+html {
+    font-size: var(--font-base) !important;
+    color: var(--clr-gray);
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lobster', cursive;
+    font-size: 4.2rem;
+    font-stretch: 100%;
+    line-height: 1.1;
+}
+
+strong,
+b {
+    --font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
