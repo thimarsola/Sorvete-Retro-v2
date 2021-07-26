@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+.whatsapp {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 100;
+
+    a {
+        margin: 0;
+        padding: 0;
+        width: var(--fs-1000);
+        height: var(--fs-1000);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--fs-500);
+        color: white;
+        line-height: 1;
+        border-radius: 50%;
+        background: radial-gradient(50% 50% at 50% 50%, #93FF00 0%, #47D332 100%);
+        transform: scale(1);
+        @include transition(transform);
+
+        &:hover,
+        &:focus {
+            transform: scale(.9);
+            @include transition(transform);
+        }
+
+        i {
+            line-height: inherit;
+        }
+    }
+}

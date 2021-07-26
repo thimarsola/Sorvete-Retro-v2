@@ -1,0 +1,51 @@
+@use "../../abstracts" as *;
+
+.divider{
+    @include padding(var(--fs-500));
+    background:{
+        image: url("../images/background-sobre.jpg");
+        size: cover;
+        position: top center;
+    }
+
+    &__row{
+        margin: 0 auto;
+        max-width: 80rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: var(--fs-1000);
+        color: var(--clr-blue-500);
+
+        &__icon{
+            padding: 0 var(--fs-400);
+        }
+
+        img{
+            max-width: 34rem;
+        }
+    }
+
+    //breakpoint tablet
+    @include mq(md){
+        &__row{
+            img{
+                max-width: 29rem;
+            }
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        @include padding(var(--fs-1000));
+
+        &__row{
+            &__icon{
+                flex-basis: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

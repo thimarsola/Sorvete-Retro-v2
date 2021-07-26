@@ -1,7 +1,43 @@
-$colors: ('primary': #fc197e,
-    'white': #fbfbfb,
-    'gray': #5b5b5f,
-    'green': #a6ce39,
-    'light-green': #b4f1c3,
-    'purple': #c13f9a,
-    'blue': #97d3c2);
+$pink: #fc197e;
+$neutral: #5b5b5f;
+$purple: #c13f9a;
+$blue: #8ecfbd;
+$green: #acd14c;
+$white: #fff;
+
+$colors: (
+    "pink": (
+        100: mix(white, $pink, 80%),
+        200: mix(white, $pink, 60%),
+        300: mix(white, $pink, 40%),
+        400: mix(white, $pink, 20%),
+        500: $pink,
+        600: mix(black, $pink, 20%),
+        700: mix(black, $pink, 40%),
+        800: mix(black, $pink, 60%),
+        900: mix(black, $pink, 80%),
+    ),
+    "neutral": (
+        100: mix(white, $neutral, 80%),
+        200: mix(white, $neutral, 60%),
+        300: mix(white, $neutral, 40%),
+        400: mix(white, $neutral, 20%),
+        500: $neutral,
+        600: mix(black, $neutral, 20%),
+        700: mix(black, $neutral, 40%),
+        800: mix(black, $neutral, 60%),
+        900: mix(black, $neutral, 80%),
+    ),
+    "purple":(
+        500: $purple
+    ),
+    "blue":(
+        500: $blue
+    ),
+    "green":(
+        500: $green
+    ),
+    "white":(
+        500: $white
+    )
+);

@@ -1,11 +1,27 @@
+//Lobster
 @font-face {
-    font-family: "Dosis";
-    src: url("../fonts/dosis.ttf") format("truetype");
+    font-family: "Lobster Regular";
+    src: url("../fonts/Lobster/Lobster-Regular.ttf");
     font-display: swap;
 }
 
+//Dosis Regular
 @font-face {
-    font-family: "Lobster";
-    src: url("../fonts/lobster.ttf") format("truetype");
+    font-family: "Dosis Regular";
+    src: url("../fonts/Dosis/static/Dosis-Regular.ttf");
+    font-display: swap;
+}
+
+//Dosis Medium
+@font-face {
+    font-family: "Dosis Medium";
+    src: url("../fonts/Dosis/static/Dosis-Medium.ttf");
+    font-display: swap;
+}
+
+//Dosis SemiBold
+@font-face {
+    font-family: "Dosis SemiBold";
+    src: url("../fonts/Dosis/static/Dosis-SemiBold.ttf");
     font-display: swap;
 }

@@ -1,0 +1,63 @@
+@use "../../abstracts" as *;
+
+.events{
+    margin-top: -10px;
+    text-align: center;
+    background:{
+        image: url("../images/background-eventos.jpg");
+        size: cover;
+        position: top center;
+    }
+
+    &::before{
+        padding: 0;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 22rem;
+        background:{
+            image: url("../images/vetor-forma-1.svg");
+            size: cover;
+            position: bottom center;
+        }
+    }
+
+    &__header{
+        margin-bottom:  var(--fs-700);
+        padding-top: var(--fs-1000);
+
+        h2{
+            font-size: var(--fs-500);
+            color: var(--clr-pink-500);
+        }
+    }
+
+    &__row{
+        @include padding(var(--fs-1000));
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
+        gap: var(--gap-lg);
+
+        &__card{
+            &__header{
+                margin-bottom: var(--fs-200);
+
+                i{
+                    font-size: var(--fs-600);
+                    color: var(--clr-blue-500) !important;
+                }
+
+                h3{
+                    margin-top: var(--fs-200);
+                    font-size: var(--fs-300);
+                    color: var(--clr-pink-500);
+                }
+            }
+
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}

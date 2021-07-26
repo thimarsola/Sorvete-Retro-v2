@@ -3,36 +3,36 @@
 .container {
     display: block;
     margin: 0 auto;
-    padding: 0 3.2rem;
+    padding: 0 var(--gap-lg);
     width: 100%;
 
-    @include mq(sm) {
+    @include breakpoint(sm) {
         margin: 0 auto;
-        padding: 0 1.6rem;
-        max-width: 540px;
+        padding: 0 var(--gap);
+        max-width: var(--sm);
     }
 
-    @include mq(md) {
+    @include breakpoint(md) {
         margin: 0 auto;
-        padding: 0 1.6rem;
-        max-width: 720px;
+        padding: 0 var(--gap);
+        max-width: var(--md);
     }
 
-    @include mq(lg) {
+    @include breakpoint(lg) {
         margin: 0 auto;
-        padding: 0 1.6rem;
-        max-width: 960px;
+        padding: 0 var(--gap);
+        max-width: var(--lg);
     }
 
-    @include mq(xl) {
+    @include breakpoint(xl) {
         margin: 0 auto;
-        padding: 0 1.6rem;
-        max-width: 1140px;
+        padding: 0 var(--gap);
+        max-width: var(--xl);
     }
 
-    @include mq(xxl) {
-        margin: 0 auto;
-        padding: 0 1.6rem;
-        max-width: 1320px;
-    }
+    //@include breakpoint(xxl) {
+    //    margin: 0 auto;
+    //    padding: 0 var(--gap);
+    //    max-width: var(--xxl);
+    //}
 }

@@ -1,0 +1,82 @@
+@use "../../abstracts" as *;
+
+.about{
+    position: relative;
+    padding-top: var(--fs-500);
+    background:{
+        image: url("../images/background-sobre.jpg");
+        size: cover;
+        position: top center;
+    }
+
+    &__row{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        gap: var(--gap-lg);
+        z-index: 2;
+
+        &__content{
+
+            &__header{
+                margin-bottom:  var(--fs-400);
+
+                h2{
+                    font-size: var(--fs-500);
+                    color: var(--clr-pink-500);
+                }
+            }
+
+            &__budget{
+                margin-top: var(--fs-500);
+
+                &__header{
+                    margin-bottom: var(--fs-400);
+                    max-width: 35rem;
+
+                    h3{
+                        font-family: 'Dosis Medium', sans-serif !important;
+                        font-size: var(--fs-300);
+                        color: var(--clr-green-500);
+                    }
+                }
+            }
+        }
+
+        &__image{
+            justify-self: flex-end;
+            align-self: center;
+
+            img{
+                max-width: 34rem;
+                width: 100%;
+            }
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        padding-top: var(--fs-1000);
+        background-size: 100rem auto;
+
+        &__row{
+            &__content{
+                position: relative;
+                padding: var(--gap-lg);
+                background-color: rgba(#fff, .9);
+                box-shadow: 0 0 30px rgba(#000, .15);
+                border-radius: 1rem;
+                z-index: 2;
+            }
+
+            &__image{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                opacity: .8;
+                z-index: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@use "../../abstracts" as *;
+
+.gallery{
+    padding-bottom: var(--fs-1000);
+
+    &__row{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gap);
+
+        a{
+            position: relative;
+            width: 100%;
+            height: 25rem;
+            filter: none;
+            transform: scale(1);
+            @include transition(all);
+
+            &:nth-child(1){
+                grid-column: 1/3;
+            }
+
+            &:nth-child(7){
+                grid-column: 2/4;
+            }
+
+            &:hover, &:focus{
+                filter: blur(1px);
+                transform: scale(.98);
+                @include transition(all);
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object:{
+                    fit: cover;
+                    position: center;
+                }
+            }
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        &__row{
+            grid-template-columns: repeat(2, 1fr);
+
+            a{
+                grid-column: inherit !important;
+            }
+        }
+    }
+}

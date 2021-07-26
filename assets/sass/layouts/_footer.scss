@@ -1,0 +1,128 @@
+@use '../abstracts' as *;
+
+.footer{
+    position: relative;
+
+    &__content{
+        @include padding(var(--fs-300));
+        color: var(--clr-pink-500);
+        text-align: center;
+
+        &__row{
+            margin-bottom: var(--fs-300);
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            &__logo{
+
+                img{
+                    max-width: 15rem;
+                    width: 100%;
+                }
+            }
+
+            &__midias{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a{
+                    width: var(--fs-600);
+                    height: var(--fs-600);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: var(--fs-300);
+                    border-radius: 50%;
+                    color: var(--clr-white-500);
+                    background: var(--clr-pink-500);
+                    @include transition(background);
+
+                    &:hover{
+                        background: var(--clr-pink-600);
+                        @include transition(background);
+                    }
+
+                    &:first-child{
+                        margin-right: var(--fs-200);
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__developer{
+        color: var(--clr-white-500);
+        font-size: 1.5rem;
+
+        &__row{
+            @include padding(1.2rem);
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 1;
+
+            a{
+                color: inherit;
+                @include transition(color);
+
+                &:hover{
+                    color: var(--clr-pink-700);
+                    @include transition(color);
+                }
+            }
+
+            &__validator{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i{
+                        margin-right: var(--fs-100);
+                        font-size: var(--fs-200) !important;
+                    }
+                }
+            }
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        &__content{
+            &__row{
+                justify-content: center;
+
+                &__logo{
+                    max-width: 18rem;
+                }
+
+                &__midias{
+                    margin-top: var(--fs-300);
+                    flex-basis: 100%;
+                }
+            }
+        }
+
+        &__developer{
+            &__row{
+                text-align: center !important;
+
+                &__agency{
+                    margin-bottom: var(--fs-200);
+                    flex-basis: 100%;
+                }
+
+                &__validator{
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+}

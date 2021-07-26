@@ -1,0 +1,144 @@
+@use "../../abstracts" as *;
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background:{
+        image: url("../images/background-home.jpg");
+        size: cover;
+        position: top center;
+    }
+
+    &__content{
+        position: relative;
+        margin-left: auto;
+        max-width: 70rem;
+        width: 100%;
+        text-align: right;
+        color: var(--clr-white-500);
+
+        h2{
+            font-family: 'Dosis SemiBold', sans-serif !important;
+            font-size: var(--fs-900);
+            text-shadow: 0 0 15px rgba(#000, .3);
+
+            span{
+                font-family: 'Lobster Regular', cursive !important;
+                color: var(--clr-pink-500);
+            }
+        }
+    }
+
+    &__vector{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+    }
+
+
+    &__sorvete{
+        position: absolute;
+        height: 80vh;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 48%);
+        z-index: 1;
+
+        img{
+            max-width: initial;
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    &__scroll {
+        position: absolute;
+        bottom: 4rem;
+        left: 50%;
+        width: 40px;
+        height: 70px;
+        display: block;
+        border-radius: 50rem;
+        border: 3px solid var(--clr-pink-500);
+        transform: translateX(-50%);
+        z-index: 1;
+
+
+        a {
+            position: relative;
+            display: flex;
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            height: 100%;
+
+            &::after {
+                content: '';
+                position: relative;
+                left: 50%;
+                top: 16%;
+                display: block;
+                width: 8px;
+                height: 8px;
+                background-color: var(--clr-pink-500);
+                border-radius: 4px;
+                transform: translatex(-50%);
+                animation: scroll 2000ms linear 10ms infinite;
+            }
+        }
+    }
+
+    @keyframes scroll {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 100%;
+        }
+
+        100% {
+            opacity: 0;
+            top: 70%;
+        }
+    }
+
+    //breakpoint tablet
+    @include mq(md){
+        &__content{
+            text-align: center;
+        }
+
+        &__vector{
+            width: 100%;
+            height: 20rem;
+
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: bottom right;
+            }
+        }
+
+        &__sorvete{
+            height: 70vh;
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        background-position: right center;
+
+        &__sorvete{
+            height: 65vh;
+            transform: translate(-50%, 60%);
+        }
+    }
+}

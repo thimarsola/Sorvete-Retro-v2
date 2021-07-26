@@ -1,0 +1,33 @@
+{
+  "testimonial": [
+    {
+      "name": "Apple",
+      "image": "apple"
+    },
+    {
+      "name": "Bradesco",
+      "image": "bradesco"
+    },   {
+      "name": "C&A",
+      "image": "cea"
+    },
+    {
+      "name": "Claro",
+      "image": "claro"
+    },   {
+      "name": "Magazine Luiza",
+      "image": "magazine-luiza"
+    },
+    {
+      "name": "NET",
+      "image": "net"
+    },   {
+      "name": "NuBank",
+      "image": "nubank"
+    },
+    {
+      "name": "Porto Seguro",
+      "image": "porto-seguro"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
 
 define("DEV", [
     "name" => "Goognet Solução Digital",
-    "url" => "https://goognet.com.br"
+    "url" => "https://goognet.com.br",
 ]);
 
 /**
@@ -17,7 +17,8 @@ define("SITE", [
     "desc" => "A Sorvete Retrô nasceu com o objetivo de renascer o clássico sorvete americano. Um dos sorvetes mais antigos existentes, aquele sorvete da infância!",
     "domain" => "sorveteretro.com.br",
     "locale" => "pt_BR",
-    "lang" => "pt-BR"
+    "lang" => "pt-BR",
+    "keywords" => "sorvete, sorvete retrô, sorvete americano, sorvete de máquina, sorvete antigo"
 ]);
 
 /**
@@ -33,7 +34,7 @@ if ($_SERVER["SERVER_NAME"] == "localhost") {
 define("SOCIAL", [
     "facebook_page" => "goognetsolucao",
     "facebook_author" => "goognetsolucao",
-    "facebook_appId" => "112861974016840",
+    "facebook_appId" => "",
     "twitter_creator" => "@GoognetSolucao",
     "twitter_site" => "@GoognetSolucao"
 ]);
@@ -64,6 +65,10 @@ define("REGION", [
  * CONTACT
  */
 define("CONTACT", [
-    "whatsapp" => "(11) 99116-9696",
-    "whatsappMessage" => "Olá Sorvete Retrô, gostaria de solicitar um orçamento para o meu evento!",
+    "whatsapp" => [
+        "number" => "(11) 99116-9696",
+        "message" => "Olá Sorvete Retrô, gostaria de solicitar um orçamento do melhor sorvete do mundo para o meu evento!"
+    ],
+    "instagram" => 'https://www.instagram.com/sorveteretro',
+    "facebook" => 'https://www.facebook.com/sorveteretrooficial'
 ]);

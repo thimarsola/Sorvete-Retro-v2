@@ -1,37 +1,41 @@
 * {
-    font-family: 'Dosis', sans-serif;
-    font-variation-settings: 'wght'var(--font-weight, 400);
+    font-family: "Dosis Regular", sans-serif !important;
 }
 
 html {
     font-size: var(--font-base) !important;
-    color: var(--clr-gray);
+    color: var(--clr-neutral-500);
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: var(--fs-200);
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: 'Lobster', cursive;
-    font-size: 4.2rem;
-    font-stretch: 100%;
+    font-family: "Lobster Regular", cursive !important;
+    font-size: inherit;
     line-height: 1.1;
 }
 
 strong,
 b {
-    --font-weight: 700;
+    font-family: "Dosis SemiBold", sans-serif !important;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
+    font-family: inherit !important;
 
     &:hover,
     &:focus {
         text-decoration: none;
     }
+}
+
+address {
+    font: inherit;
 }
